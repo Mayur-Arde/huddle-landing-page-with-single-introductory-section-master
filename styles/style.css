@@ -13,7 +13,36 @@ html{
 }
 
 body{
-  
+  font-family: 'Open Sans', sans-serif;
+  background: url(../images/bg-mobile.svg);
+  background-color: var(--Violet);
+  background-repeat: no-repeat;
+} 
+
+.head-logo{
+  /* display: block; */
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 40px;
+}
+
+.main{
+
+}
+
+.logo{
+  height: 2rem  ;
+}
+
+.container{
+  width: 80%;
+  /* max-width: 90rem; */
+  margin: 0 auto;
+}
+
+.img{
+  margin-top: 27px;
+  width: 100%;
 }
 
 /* attribution */
