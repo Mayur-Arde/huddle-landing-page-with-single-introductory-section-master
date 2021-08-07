@@ -13,12 +13,17 @@ html{
 }
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: url(../images/bg-mobile.svg);
   background-color: var(--Violet);
   background-repeat: no-repeat;
 } 
 
+a{
+  text-decoration: none;
+}
+
+/* header logo */
 .head-logo{
   /* display: block; */
   width: 80%;
@@ -26,24 +31,49 @@ body{
   padding-top: 40px;
 }
 
-.main{
-
-}
-
 .logo{
   height: 2rem  ;
 }
 
+
+/* main */
+
 .container{
   width: 80%;
-  /* max-width: 90rem; */
+  max-width: 90rem;
   margin: 0 auto;
+  text-align: center;
 }
 
+/* hero-img */
 .img{
   margin-top: 27px;
   width: 100%;
 }
+
+.hero .hero-title{
+  font-size: 0.78rem;
+}
+
+.hero .info{
+  font-family: 'Open Sans', sans-serif;
+  /* font-size: 15px; */
+  margin-bottom: 2.2rem;
+}
+
+/* button */
+.register{
+  margin: 15px 0;
+}
+
+.btn{
+  padding: 10px 5rem;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 35px 0px;
+}
+
+
 
 /* attribution */
 .attribution { font-size: 11px; text-align: center; }
