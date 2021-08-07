@@ -28,7 +28,7 @@ a{
   /* display: block; */
   width: 80%;
   margin-left: 10%;
-  padding-top: 40px;
+  padding-top: 35px;
 }
 
 .logo{
@@ -47,32 +47,44 @@ a{
 
 /* hero-img */
 .img{
-  margin-top: 27px;
+  margin-top: 50px;
   width: 100%;
 }
 
-.hero .hero-title{
-  font-size: 0.78rem;
+.hero{
+  color: #fff;
 }
 
-.hero .info{
+.hero h1{
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+.hero p{
   font-family: 'Open Sans', sans-serif;
-  /* font-size: 15px; */
-  margin-bottom: 2.2rem;
+  line-height: 1.5;
+  margin: 1rem 0 2.3rem;
 }
 
 /* button */
-.register{
-  margin: 15px 0;
+.regsiter{
+  padding: 10px;
 }
 
 .btn{
-  padding: 10px 5rem;
+  padding: 10px 4.8rem;
   background-color: #fff;
   border-radius: 20px;
-  margin: 35px 0px;
+
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 45px 15px 0;
+}
 
 
 /* attribution */
