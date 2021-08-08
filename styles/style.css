@@ -13,7 +13,7 @@ html{
 }
 
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: url(../images/bg-mobile.svg);
   background-color: var(--Violet);
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@ a{
 
 /* header logo */
 .head-logo{
-  /* display: block; */
+  font-family: 'Poppins', sans-serif;
   width: 80%;
   margin-left: 10%;
   padding-top: 35px;
@@ -40,7 +40,7 @@ a{
 
 .container{
   width: 80%;
-  max-width: 90rem;
+  /* max-width: 90rem; */
   margin: 0 auto;
   text-align: center;
 }
@@ -69,16 +69,25 @@ a{
 /* button */
 .regsiter{
   padding: 10px;
+  display: inline-block;
 }
 
 .btn{
   padding: 10px 4.8rem;
   background-color: #fff;
   border-radius: 20px;
-
+  box-shadow: 0 5px 5px -5px #333;
 }
 
-footer{
+.regsiter a {
+  color: var(--Violet);
+}
+
+.btn:hover{
+  background-color: var(--softMagenta);
+}
+
+.footer{
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -86,12 +95,117 @@ footer{
   margin: 45px 15px 0;
 }
 
-.icon{
-  border: 1.2px solid rgba(255, 255, 255, 0.659);
-  border-radius: 50%;
-  padding: 3px;
+.social{
+  padding: 10px;
+  /* width: 50px; */
 }
+
+.social-links a:hover{
+  fill: var(--softMagenta);
+}
+
 
 /* attribution */
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: var(--softMagenta)}
+
+
+/* media query */
+@media all and (min-width:650px){
+  .logo{
+    height: 2.5rem  ;
+  }
+  
+  .container{
+    width: 90%;
+  }
+
+  .hero h1{
+    font-size: 2.2rem;
+  }
+
+  .hero p{
+    font-size: 20px;
+  }
+
+  .btn{
+    padding: 15px 6rem;
+    border-radius: 30px;
+  }
+
+  .social{
+    width: 50px;
+  }
+}
+
+@media all and (min-width:1300px){
+
+  body{
+    background-image: url(../images/bg-desktop.svg) ;
+    background-size: contain;
+  }
+
+  .head-logo{
+    width: 80%;
+    margin-left: 5%;
+    padding-top: 50px;
+  }
+  
+  .logo{
+    height: 3.3rem  ;
+  }
+  
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container{
+    width: 95%;
+    display: flex;
+    justify-content: space-around; 
+        align-items: center;
+  }
+
+  .hero{
+    width: 40%;
+    text-align: left;
+    padding-right: 45px;
+  }
+
+  .img{
+    margin-top: 4.2rem;
+    max-width: 700px;
+  }
+
+  .hero h1{
+    font-size: 2.8rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+  }
+
+  .hero p{
+    font-size: 1.062rem;
+    margin-top: 1.56rem;
+    letter-spacing: .5px;
+    line-height: 1.6;
+    margin-bottom: 1.56rem;
+  }
+
+  .btn{
+    padding: 15px 3rem;
+    border-radius: 30px;
+  }
+
+  .footer{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 0;
+    padding:0 50px 1rem;
+  }
+
+  .social{
+    padding-right: ;
+  }
+}
