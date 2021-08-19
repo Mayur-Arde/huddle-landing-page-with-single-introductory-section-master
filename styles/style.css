@@ -36,7 +36,6 @@ a{
 
 
 /* main */
-
 .container{
   width: 80%;
   /* max-width: 90rem; */
@@ -163,7 +162,7 @@ a{
     width: 95%;
     display: flex;
     justify-content: space-around; 
-        align-items: center;
+     align-items: center;
   }
 
   .hero{
